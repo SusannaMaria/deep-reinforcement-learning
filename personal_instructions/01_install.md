@@ -5,6 +5,7 @@
 https://code.visualstudio.com/docs/?dv=linux64_deb
 2. Install 
 sudo dpkg -i code_1.43.2-1585036376_amd64.deb
+3. Install python Extension
 
 ## Anaconda3 Python Environment
 following the procedure https://docs.anaconda.com/anaconda/install/linux/
@@ -35,7 +36,7 @@ echo "conda activate udacity">>~/.bashrc
 exit
 ```
 7. Open new terminal
-`<ctrl>+<alt>t`
+`<ctrl>+<alt>t` 
 8. Install gym and dependencies
 following the instructions from https://github.com/openai/gym
 I added gym as submodule to the fork of the udacity repository by
@@ -48,9 +49,9 @@ cd gym
 pip install -e .
 pip install -e '.[all]'
 ```
-  * Install jupyter framework and dependencies seaborn
+  * Install jupyter framework and dependencies
 ```bash
-conda install jupyter matplotlib
+conda install jupyter matplotlib seaborn
 ```
 9 Start jupyter without password protection for local use
 ```bash
